@@ -1,3 +1,3 @@
 ### Name: Razu Biswas
-#### Email: sreekantaraju3421@gmaol.com
+#### Email: sreekantaraju3421@gmail.com
 
