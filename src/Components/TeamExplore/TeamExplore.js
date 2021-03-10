@@ -30,9 +30,7 @@ const TeamExplore = () => {
             <Container className="card-style justify-content center">
                 <div class="card mb-3 bg-primary" style={{ maxWidth: '1040px' }}>
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img className='img-fluid' src={teamExplore.strGender === 'Male' ? MaleImage : FeMaleImage} alt="" />
-                        </div>
+                        
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Name : {teamExplore.strTeam}</h5>
@@ -42,13 +40,21 @@ const TeamExplore = () => {
                                 <p> <FontAwesomeIcon icon={faFlag} /> Country : {teamExplore.strCountry}</p>
                             </div>
                         </div>
+                        <div class="col-md-4 img-cover">
+                            <img className='img-fluid' src={teamExplore.strGender === 'Male' ? MaleImage : FeMaleImage} alt="" />
+                        </div>
                     </div>
                     
                  </div>
+                 <div>
+                   <p style={{color: 'white'}}>{teamExplore.strDescriptionEN}</p>
+                   <br/>
+                   <p style={{color: 'white'}}>{teamExplore.strStadiumDescription}</p>
+                </div>
                </Container>
-               <p style={{color: 'white'}}>{teamExplore.strDescriptionEN}</p>
-               <br/>
-               <p style={{color: 'white'}}>{teamExplore.strStadiumDescription}</p>
+ 
+
+
                <footer className="col-md-12 d-flex justify-content-center footer-design">
                     {/* <img src={Facebook} alt=""/>
                     <img src={Twitter} alt=""/>
