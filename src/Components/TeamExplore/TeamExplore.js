@@ -6,7 +6,8 @@ import './TeamExplore.css';
 import{ Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFutbol, faFlag, faMarsStroke, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { FaFacebook, FaYoutube, FaTwitterSquare } from 'react-icons/fa';
+import { FaFacebook, FaYoutube, FaTwitterSquare, FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 
@@ -55,17 +56,15 @@ const TeamExplore = () => {
 
 
                <footer className="col-md-12 d-flex justify-content-center footer-design">
-
+                   
+                    <Link to="/"><FaHome></FaHome></Link>
                     <a target="_blank" href={`https://${teamExplore.strFacebook}`} rel="noreferrer">
                     <FaFacebook></FaFacebook> </a>
                      <a target="_blank" href={`https://${teamExplore.strTwitter}`} rel="noreferrer"> <FaTwitterSquare></FaTwitterSquare>
                       </a>
                      <a target="_blank" href={`https://${teamExplore.strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
                      </a>
-                        
-                        
-
-                     
+                           
                         
                </footer>
         </div>
