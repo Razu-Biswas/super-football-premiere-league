@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import MaleImage from '../../images/Photo/male.png';
 import FeMaleImage from '../../images/Photo/female.png';
-
 import './TeamExplore.css';
 import{ Container } from 'react-bootstrap';
-import Facebook from '../../images/Icon/Facebook.png';
-import Twitter from '../../images/Icon/Twitter.png';
-import YouTube from '../../images/Icon/YouTube.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFutbol, faFlag, faMarsStroke, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import {faFutbol, faFlag, faMarsStroke, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebook, FaYoutube, FaTwitterSquare } from 'react-icons/fa';
+
+
 
 const TeamExplore = () => {
     const { id } = useParams();
@@ -27,7 +26,7 @@ const TeamExplore = () => {
                 <img src={teamExplore.strTeamBadge} alt="" />
             </div>
 
-            <Container className="card-style justify-content center">
+            <Container className="card-style justify-content center container-class">
                 <div class="card mb-3 bg-primary" style={{ maxWidth: '1040px' }}>
                     <div class="row g-0">
                         
@@ -56,15 +55,18 @@ const TeamExplore = () => {
 
 
                <footer className="col-md-12 d-flex justify-content-center footer-design">
-                    {/* <img src={Facebook} alt=""/>
-                    <img src={Twitter} alt=""/>
-                    <img src={YouTube} alt=""/> */}
+
                     <a target="_blank" href={`https://${teamExplore.strFacebook}`} rel="noreferrer">
-                     <img src={Facebook} alt="" /> </a>
-                     <a target="_blank" href={`https://${teamExplore.strTwitter}`} rel="noreferrer">
-                     <img src={Twitter} alt="" /> </a>
-                     <a target="_blank" href={`https://${teamExplore.strYoutube}`} rel="noreferrer">
-                     <img src={YouTube} alt="" /> </a>
+                    <FaFacebook></FaFacebook> </a>
+                     <a target="_blank" href={`https://${teamExplore.strTwitter}`} rel="noreferrer"> <FaTwitterSquare></FaTwitterSquare>
+                      </a>
+                     <a target="_blank" href={`https://${teamExplore.strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
+                     </a>
+                        
+                        
+
+                     
+                        
                </footer>
         </div>
 
