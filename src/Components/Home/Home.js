@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import image from '../../images/walpaper2.jpg';
+
 import Team from '../Team/Team.js';
 import './Home.css';
 const Home = () => {
