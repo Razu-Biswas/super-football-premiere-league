@@ -1,0 +1,19 @@
+
+.logo-details{
+    background-image: url("../../images/walpaper2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center/cover;
+    width: 100%;
+    height: 300px;
+    border: 10px solid red;
+}
+.logo-details img{
+    width:15%;
+
+}
+.card-body{
+    color: white;
+}
+.footer-design img{
+    height:50%;
+}

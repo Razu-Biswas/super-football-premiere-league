@@ -1,0 +1,10 @@
+.team-image{
+    width: 50%;
+    padding-top: 3px;
+}
+.single-team{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin:10px;
+    
+}
