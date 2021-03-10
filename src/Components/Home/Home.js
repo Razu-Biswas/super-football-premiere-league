@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react';
-
 import Team from '../Team/Team.js';
 import './Home.css';
+
+
 const Home = () => {
     const [teams, setTeams] = useState([]);
 
@@ -15,7 +16,7 @@ const Home = () => {
         <div className="home-main">
             <div className="home-image">
                 <h1 className="title">Super   Football Premier League (SFPL)</h1>
-                {/* <img src={image} alt="" /> */}
+                
             </div>
             <div className="home-teams">
                 {
