@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const TeamExplore = () => {
     const { id } = useParams();
     const [teamExplore, setTeamExplore] = useState({});
-    const { strTeamBadge, strTeam, intFormedYear, strSport, strGender, strCountry, strDescriptionEN, strStadiumDescription, strFacebook, strTwitter, strYoutube } = teamExplore;
+    const {strStadiumThumb,  strTeamBadge, strTeam, intFormedYear, strSport, strGender, strCountry, strDescriptionEN, strStadiumDescription, strFacebook, strTwitter, strYoutube } = teamExplore;
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${id}`;
         fetch(url)
@@ -24,7 +24,7 @@ const TeamExplore = () => {
     return (
 
         <div class="align-item-center bg-dark">
-            <div className="logo-details">
+            <div className="logo-details" style={{background: `url(${strStadiumThumb}) no-repeat center center/cover` }}>
                 <img src={strTeamBadge} alt="" />
                 
             </div>
@@ -54,12 +54,12 @@ const TeamExplore = () => {
             </Container>
 
             <footer className="col-md-12 d-flex justify-content-center footer-design">
-                <Link to="/"><FaHome></FaHome></Link>
+                <Link id="home" to="/"><FaHome></FaHome></Link>
                 <a target="_blank" href={`https://${strFacebook}`} rel="noreferrer">
                     <FaFacebook></FaFacebook> </a>
                 <a target="_blank" href={`https://${strTwitter}`} rel="noreferrer"> <FaTwitterSquare></FaTwitterSquare>
                 </a>
-                <a target="_blank" href={`https://${strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
+                <a id="youtube"target="_blank" href={`https://${strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
                 </a>
             </footer>
         </div>

@@ -5,9 +5,9 @@
 project live site link **
 [Super Football Premiere League (SEPL)](https://react-router-raju.netlify.app/)
 
-#### Extra Two Feature Added : 
+#### Write  Two Feature  : 
 1. Details Page take Home page back er jonno Home Feature Add...
-2. Social Media Icon (Ract Icon ) use kora hoyce..
+2. Home page all team show and Team Explore e Single team information show..
 #### Bonus Part: 
 
 1. Website Responsive (website responsive for mobile and Desktop)
