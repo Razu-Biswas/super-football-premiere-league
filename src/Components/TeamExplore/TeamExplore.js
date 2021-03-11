@@ -35,7 +35,7 @@ const TeamExplore = () => {
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Name : {strTeam}</h5>
-                                <p class="card-text"> <FontAwesomeIcon icon={faMapMarkerAlt} /> Founder : {intFormedYear}</p>
+                                <p class="card-text"> <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded : {intFormedYear}</p>
                                 <p> <FontAwesomeIcon icon={faFutbol} /> Sport Type : {strSport}</p>
                                 <p> <FontAwesomeIcon icon={faMarsStroke} /> Gender : {strGender}</p>
                                 <p> <FontAwesomeIcon icon={faFlag} /> Country : {strCountry}</p>
