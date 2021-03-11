@@ -26,12 +26,12 @@ const TeamExplore = () => {
         <div class="align-item-center bg-dark">
             <div className="logo-details">
                 <img src={strTeamBadge} alt="" />
+                
             </div>
 
             <Container className="card-style justify-content center container-class">
                 <div class="card mb-3 bg-primary" style={{ maxWidth: '1040px' }}>
                     <div class="row g-0">
-
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Name : {strTeam}</h5>
@@ -45,7 +45,6 @@ const TeamExplore = () => {
                             <img className='img-fluid' src={strGender === 'Male' ? MaleImage : FeMaleImage} alt="" />
                         </div>
                     </div>
-
                 </div>
                 <div>
                     <p style={{ color: 'white' }}>{strDescriptionEN}</p>
@@ -55,16 +54,13 @@ const TeamExplore = () => {
             </Container>
 
             <footer className="col-md-12 d-flex justify-content-center footer-design">
-
                 <Link to="/"><FaHome></FaHome></Link>
                 <a target="_blank" href={`https://${strFacebook}`} rel="noreferrer">
                     <FaFacebook></FaFacebook> </a>
                 <a target="_blank" href={`https://${strTwitter}`} rel="noreferrer"> <FaTwitterSquare></FaTwitterSquare>
                 </a>
-                  <a target="_blank" href={`https://${strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
-                  </a>
-
-
+                <a target="_blank" href={`https://${strYoutube}`} rel="noreferrer"><FaYoutube></FaYoutube>
+                </a>
             </footer>
         </div>
 
